@@ -71,9 +71,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Core\Spotify.RestSharp\Spotify.RestSharp.csproj">
+    <ProjectReference Include="..\..\..\Core\Spotify.Core\Spotify.Core.csproj">
       <Project>{67C1ABA2-3074-4FAD-BC16-8866AB61E9D1}</Project>
-      <Name>Spotify.RestSharp</Name>
+      <Name>Spotify.Core</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

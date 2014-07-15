@@ -2,4 +2,5 @@
 <resources>
   <string name="hello">Hello World, Click Me!</string>
   <string name="app_name">Spotify.Droid</string>
+  <color name="red">#FF0000</color>
 </resources>

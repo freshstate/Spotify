@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{5062EA4F-C8AC-42DC-B505-BF46A0239C5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotify.RestSharp", "Core\Spotify.RestSharp\Spotify.RestSharp.csproj", "{67C1ABA2-3074-4FAD-BC16-8866AB61E9D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotify.Core", "Core\Spotify.Core\Spotify.Core.csproj", "{67C1ABA2-3074-4FAD-BC16-8866AB61E9D1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Droid", "Droid", "{BD18DDCC-A524-4B3F-BD9A-590A22281499}"
 EndProject

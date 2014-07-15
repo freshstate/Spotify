@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Spotify.RestSharp
+namespace Spotify.Core
 {
   public class ExternalUrls
   {

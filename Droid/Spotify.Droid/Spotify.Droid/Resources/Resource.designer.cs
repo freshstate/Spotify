@@ -38,12 +38,12 @@ namespace Spotify.Droid
 			global::Microsoft.Practices.ServiceLocation.Android.Resource.String.ApplicationName = global::Spotify.Droid.Resource.String.ApplicationName;
 			global::Microsoft.Practices.ServiceLocation.Android.Resource.String.Hello = global::Spotify.Droid.Resource.String.Hello;
 			global::Microsoft.Practices.ServiceLocation.Android.Resource.Style.Mono_Android_Theme_Splash = global::Spotify.Droid.Resource.Style.Mono_Android_Theme_Splash;
-			global::Spotify.RestSharp.Resource.Drawable.monoandroidsplash = global::Spotify.Droid.Resource.Drawable.monoandroidsplash;
-			global::Spotify.RestSharp.Resource.Layout.monoandroidsplash = global::Spotify.Droid.Resource.Layout.monoandroidsplash;
-			global::Spotify.RestSharp.Resource.String.ApplicationName = global::Spotify.Droid.Resource.String.ApplicationName;
-			global::Spotify.RestSharp.Resource.String.Hello = global::Spotify.Droid.Resource.String.Hello;
-			global::Spotify.RestSharp.Resource.String.library_name = global::Spotify.Droid.Resource.String.library_name;
-			global::Spotify.RestSharp.Resource.Style.Mono_Android_Theme_Splash = global::Spotify.Droid.Resource.Style.Mono_Android_Theme_Splash;
+			global::Spotify.Core.Resource.Drawable.monoandroidsplash = global::Spotify.Droid.Resource.Drawable.monoandroidsplash;
+			global::Spotify.Core.Resource.Layout.monoandroidsplash = global::Spotify.Droid.Resource.Layout.monoandroidsplash;
+			global::Spotify.Core.Resource.String.ApplicationName = global::Spotify.Droid.Resource.String.ApplicationName;
+			global::Spotify.Core.Resource.String.Hello = global::Spotify.Droid.Resource.String.Hello;
+			global::Spotify.Core.Resource.String.library_name = global::Spotify.Droid.Resource.String.library_name;
+			global::Spotify.Core.Resource.Style.Mono_Android_Theme_Splash = global::Spotify.Droid.Resource.Style.Mono_Android_Theme_Splash;
 		}
 		
 		public partial class Attribute
@@ -55,6 +55,22 @@ namespace Spotify.Droid
 			}
 			
 			private Attribute()
+			{
+			}
+		}
+		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int red = 2131099648;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
 			{
 			}
 		}
@@ -81,11 +97,11 @@ namespace Spotify.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060001
-			public const int list_view = 2131099649;
+			// aapt resource value: 0x7f070001
+			public const int list_view = 2131165185;
 			
-			// aapt resource value: 0x7f060000
-			public const int searchView1 = 2131099648;
+			// aapt resource value: 0x7f070000
+			public const int searchView1 = 2131165184;
 			
 			static Id()
 			{

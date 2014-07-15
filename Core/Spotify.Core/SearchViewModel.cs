@@ -3,13 +3,16 @@ using RestSharp;
 using GalaSoft.MvvmLight;
 using System.Collections.Generic;
 
-namespace Spotify.RestSharp
+namespace Spotify.Core
 {
-  public class SearchViewModel : ViewModelBase
+  /// <summary>
+  /// View Model to search something on Spotify 
+  /// </summary>
+  public class SearchViewModel : ViewModelBaseExtended
   {
     const string BaseUrl = "https://api.spotify.com/";
-    const string ClientID = "b0abdbcad3ca4947881242a102997fba";
-    const string ClientSecret = "04236a53f2ff418cb9230afeeef05a05";
+    const string ClientID = "yourclientid";
+    const string ClientSecret = "yourclientsecret";
 
     RestClient m_restClient;
     RestRequestAsyncHandle m_requestHandle;
@@ -31,19 +34,12 @@ namespace Spotify.RestSharp
       request.AddParameter("client_id", ClientID);
       request.AddParameter("client_secret", ClientSecret);
       request.AddParameter("q", queryString);
+//      request.AddParameter("type", "artist,album,track");
       request.AddParameter("type", "track");
-      request.AddParameter("limit", 3);
+      request.AddParameter("limit", 20);
       request.AddParameter("offset", 0);
 
-      //RestResponse<Track> response = (RestResponse)m_restClient.Execute(request);
-      //System.Console.WriteLine(response.Content);
-
-      //m_requestHandle = m_restClient.ExecuteAsync(request, response => {
-      //  Console.WriteLine("response = " +response.Content);
-      //});
-
       m_requestHandle = m_restClient.ExecuteAsync<RootObject>(request, response => {
-        //Console.WriteLine("response = " +response.Data.tracks);
         TrackList = response.Data.tracks.items;
       });
         
